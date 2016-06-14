@@ -6,6 +6,9 @@ Documento conteniendo algunas fórmulas útiles para las clases de Geometría Di
 El archivo `formulas.tex` contiene todo el documento y deberia de funcionar con su ambiente latex favorito.
 
 Puede usar el comando:
+
+
+
     pdflatex formulas.tex
 
 
