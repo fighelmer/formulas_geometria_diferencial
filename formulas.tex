@@ -11,6 +11,12 @@
 \newcommand{\CC}{\mathbb{C}}
 \newcommand{\ZZ}{\mathbb{Z}}
 \renewcommand{\SS}{\EuScript{S}}
+%Marco de Frechet-Serret
+\newcommand{\vtan}{\mathbf{t}}
+\newcommand{\nor}{\mathbf{n}}
+\newcommand{\bin}{\mathbf{b}}
+
+
 
 %Norma de un vector
 \renewcommand{\v}{\Vert}
@@ -23,7 +29,12 @@ Se imitará la notación del libro \cite{edg}, de antemano se asume que todas la
 \subsection{Curvatura}
 La curvatura de una curva $\gamma$ parametrizada con respecto a su longitud de arco $s$ es la segunda derivada con respecto a $s$:
 $$\kappa = \v \ddot \gamma(s)\v$$
+Si el parámetro de $\gamma$ no es necesariamente su longitud de arco, entonces tenemos:
+$$\kappa = \frac{\v \ddot\gamma \times \dot\gamma\v}{\v \dot \gamma\v}$$
 
+\subsection{Torsión}
+La torsión $\tau$ de una curva $\gamma$ está definida por:
+\[ \dot\bin = -\tau \nor \] 
 \begin{thebibliography}{9}
 \bibitem{edg}
 Andrew Pressley,
