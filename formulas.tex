@@ -1,0 +1,35 @@
+\documentclass{article}
+
+%Para reconocer tildes y otras cosas de español
+\usepackage[utf8]{inputenc}
+
+%Símbolos de uso común:
+\newcommand{\RR}{\mathbb{R}}
+\renewcommand{\Re}{\text{Re\,}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\renewcommand{\SS}{\EuScript{S}}
+
+%Norma de un vector
+\renewcommand{\v}{\Vert}
+
+\begin{document}
+\section{Introducción}
+Se imitará la notación del libro \cite{edg}, de antemano se asume que todas las curvas y superficies son suaves a menos que se diga lo contrario.
+
+\section{Curvas}
+\subsection{Curvatura}
+La curvatura de una curva $\gamma$ parametrizada con respecto a su longitud de arco $s$ es la segunda derivada con respecto a $s$:
+$$\kappa = \v \ddot \gamma(s)\v$$
+
+\begin{thebibliography}{9}
+\bibitem{edg}
+Andrew Pressley,
+\emph{Elementary Differentiable Geometry},
+Springer Undergraduate Mathematics Series (SUMS),
+Second Edition, 
+2010.
+\end{thebibliography}
+\end{document}

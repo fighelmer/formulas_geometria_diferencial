@@ -1,3 +1,7 @@
+#Archivos de respaldo de vi/vim
+*~
+*.swp
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
