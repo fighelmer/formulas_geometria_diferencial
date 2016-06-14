@@ -22,6 +22,9 @@
 \newcommand{\nor}{\mathbf{n}}
 \newcommand{\bin}{\mathbf{b}}
 
+%Las ecuaciones llevan la seccion
+\numberwithin{equation}{section}
+
 
 
 %Norma de un vector
@@ -34,23 +37,33 @@ Se imitará la notación del libro \cite{edg}, de antemano se asume que todas la
 \section{Curvas}
 \subsection{Curvatura}
 La curvatura de una curva $\gamma$ parametrizada con respecto a su longitud de arco $s$ es la segunda derivada con respecto a $s$:
-$$\kappa = \v \ddot \gamma(s)\v$$
+\begin{equation} \kappa = \v \ddot \gamma(s)\v \end{equation}
 Si el parámetro de $\gamma$ no es necesariamente su longitud de arco, entonces tenemos:
-$$\kappa = \frac{\v \ddot\gamma \times \dot\gamma\v}{\v \dot \gamma\v}$$
+\begin{equation} \kappa = \frac{\v \ddot\gamma \times \dot\gamma\v}{\v \dot \gamma\v}\end{equation}
 
 \subsection{Torsión}
 La torsión $\tau$ de una curva $\gamma$ está definida por:
-\[ \dot\bin = -\tau \nor \] 
+\begin{equation} \dot\bin = -\tau \nor \end{equation}
+    Para una curva $\gamma$:
+    \begin{equation}
+        \tau = \frac{(\dot\gamma \times \ddot\gamma)\cdot \dddot \gamma}{\v \dot\gamma\times\ddot\gamma \v^2}
+    \end{equation}
 
 \section{Superficies}
 \subsection{Formas Fundamentales}
-Para una superficie $\sigma(u,v)$ las formas fundamentales son $E\,du^2 + 2F\,du\,dv + G\,dv^2$ y  $L\,du^2 + 2M\,du\,dv + N\,dv^2$ donde:
-\begin{align}
-    E = \sigma_u\cdot \sigma_u \quad & L = \sigma_{uu} \cdot N = -\sigma_u\cdot N_u \\
-    F = \sigma_u\cdot \sigma_v \quad & M = \sigma_{uv} \cdot N = -\sigma_u\cdot N_v\\
-    G = \sigma_v\cdot \sigma_v \quad & N = \sigma_{vv} \cdot N = -\sigma_v\cdot N_v
-\end{align}
+Para una superficie $\sigma(u,v)$ la primera forma fundamental es $E\,du^2 + 2F\,du\,dv + G\,dv^2$ 
+    \[E = \sigma_u\cdot \sigma_u, \quad 
+    F = \sigma_u\cdot \sigma_v, \quad 
+    G = \sigma_v\cdot \sigma_v \]
 
+Y  la segunda formas fundamental es: $L\,du^2 + 2M\,du\,dv + N\,dv^2$ donde:
+\begin{subequations}
+\begin{align}
+ L = \sigma_{uu} \cdot N &= -\sigma_u\cdot N_u \\
+ M = \sigma_{uv} \cdot N &= -\sigma_u\cdot N_v = -\sigma_v\cdot N_u\\
+    N = \sigma_{vv} \cdot N &= -\sigma_v\cdot N_v 
+\end{align}
+\end{subequations}
 
 \begin{thebibliography}{9}
 \bibitem{edg}
