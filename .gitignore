@@ -3,7 +3,7 @@
 *.swp
 
 #No seguir los archivos tipo .pdf
-#.pdf
+*.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

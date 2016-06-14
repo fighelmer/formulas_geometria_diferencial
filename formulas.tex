@@ -1,7 +1,13 @@
 \documentclass{article}
 
 %Para reconocer tildes y otras cosas de español
+\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{euscript}
+\usepackage{amsmath,amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
 
 %Símbolos de uso común:
 \newcommand{\RR}{\mathbb{R}}
@@ -35,6 +41,17 @@ $$\kappa = \frac{\v \ddot\gamma \times \dot\gamma\v}{\v \dot \gamma\v}$$
 \subsection{Torsión}
 La torsión $\tau$ de una curva $\gamma$ está definida por:
 \[ \dot\bin = -\tau \nor \] 
+
+\section{Superficies}
+\subsection{Formas Fundamentales}
+Para una superficie $\sigma(u,v)$ las formas fundamentales son $E\,du^2 + 2F\,du\,dv + G\,dv^2$ y  $L\,du^2 + 2M\,du\,dv + N\,dv^2$ donde:
+\begin{align}
+    E = \sigma_u\cdot \sigma_u \quad & L = \sigma_{uu} \cdot N = -\sigma_u\cdot N_u \\
+    F = \sigma_u\cdot \sigma_v \quad & M = \sigma_{uv} \cdot N = -\sigma_u\cdot N_v\\
+    G = \sigma_v\cdot \sigma_v \quad & N = \sigma_{vv} \cdot N = -\sigma_v\cdot N_v
+\end{align}
+
+
 \begin{thebibliography}{9}
 \bibitem{edg}
 Andrew Pressley,
@@ -42,5 +59,6 @@ Andrew Pressley,
 Springer Undergraduate Mathematics Series (SUMS),
 Second Edition, 
 2010.
+
 \end{thebibliography}
 \end{document}
