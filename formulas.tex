@@ -39,15 +39,29 @@ Se imitará la notación del libro \cite{edg}, de antemano se asume que todas la
 La curvatura de una curva $\gamma$ parametrizada con respecto a su longitud de arco $s$ es la segunda derivada con respecto a $s$:
 \begin{equation} \kappa = \v \ddot \gamma(s)\v \end{equation}
 Si el parámetro de $\gamma$ no es necesariamente su longitud de arco, entonces tenemos:
-\begin{equation} \kappa = \frac{\v \ddot\gamma \times \dot\gamma\v}{\v \dot \gamma\v}\end{equation}
+\begin{equation} \kappa = \frac{\v \dot\gamma \times \ddot\gamma\v}{\v \dot \gamma\v^3}\end{equation}
+Si es una curva plana $\mathbf{\gamma}\colon [a,b] \subset \mathbb{R} \to\mathbb{R}^2$ entonces esta definida por:
+\begin{equation} \kappa = \frac{ |\dot x \ddot y- \ddot x \dot y|}{\{{\dot x}^2+{\dot y}^2\}^{3/2}}\end{equation}
+Si la curva esta en coordenadas polares mediante $\rho = \rho(\theta)$ entonces la curvatura es:
+\begin{equation} \kappa = \frac{ 2{\dot \rho}^2 - \rho{\ddot \rho}+{\rho}^2}{\{{\dot \rho}^2+{\rho}^2\}^{3/2}}\end{equation}
 
 \subsection{Torsión}
 La torsión $\tau$ de una curva $\gamma$ está definida por:
 \begin{equation} \dot\bin = -\tau \nor \end{equation}
     Para una curva $\gamma$:
     \begin{equation}
-        \tau = \frac{(\dot\gamma \times \ddot\gamma)\cdot \dddot \gamma}{\v \dot\gamma\times\ddot\gamma \v^2}
+        \tau = -\frac{(\dot\gamma \times \ddot\gamma)\cdot \dddot \gamma}{\v \dot\gamma\times\ddot\gamma \v^2}
     \end{equation}
+
+\subsection{Las Ecuaciones de Frenet-Serret}
+Si $\gamma$ esta arco-parametrizada o es de velocidad unitaria la curva en  $\mathbf{R}^3$ estara dada por:
+\begin{equation}
+\begin{aligned}
+\dot\vtan &= \kappa \nor \\
+\dot\nor &=  -\kappa \vtan + \tau \bin \\
+\dot\bin &= -\tau \nor \\
+\end{aligned}
+\end{equation}
 
 \section{Superficies}
 \subsection{Formas Fundamentales}
