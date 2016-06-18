@@ -40,8 +40,6 @@ La curvatura de una curva $\gamma$ parametrizada con respecto a su longitud de a
 \begin{equation} \kappa = \v \ddot \gamma(s)\v \end{equation}
 Si el parámetro de $\gamma$ no es necesariamente su longitud de arco, entonces tenemos:
 \begin{equation} \kappa = \frac{\v \dot\gamma \times \ddot\gamma\v}{\v \dot \gamma\v^3}\end{equation}
-Si es una curva plana $\mathbf{\gamma}\colon [a,b] \subset \mathbb{R} \to\mathbb{R}^2$ entonces esta definida por:
-\begin{equation} \kappa = \frac{ |\dot x \ddot y- \ddot x \dot y|}{\{{\dot x}^2+{\dot y}^2\}^{3/2}}\end{equation}
 Si la curva esta en coordenadas polares mediante $\rho = \rho(\theta)$ entonces la curvatura es:
 \begin{equation} \kappa = \frac{ 2{\dot \rho}^2 - \rho{\ddot \rho}+{\rho}^2}{\{{\dot \rho}^2+{\rho}^2\}^{3/2}}\end{equation}
 
@@ -50,7 +48,7 @@ La torsión $\tau$ de una curva $\gamma$ está definida por:
 \begin{equation} \dot\bin = -\tau \nor \end{equation}
     Para una curva $\gamma$:
     \begin{equation}
-        \tau = -\frac{(\dot\gamma \times \ddot\gamma)\cdot \dddot \gamma}{\v \dot\gamma\times\ddot\gamma \v^2}
+        \tau = \frac{(\dot\gamma \times \ddot\gamma)\cdot \dddot \gamma}{\v \dot\gamma\times\ddot\gamma \v^2}
     \end{equation}
 
 \subsection{Las Ecuaciones de Frenet-Serret}
